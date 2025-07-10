@@ -24,8 +24,8 @@ if start_game == 1:
             print("Player has " + str(player_hand) + ".  Dealer has " + str(dealer_show)  + ".  Would you like another card?  Press 'y' for yes, 'n' to stay")
             decision = str(input())
 
-            if decision == "y":
-                while player_hand < 21:
+            while decision == "y":
+                if player_hand < 21:
                     player_hand += random.randint(1,11)
                     print("Player has " + str(player_hand) + ".  Would you like another card?  Press 'y' for yes, 'n' for no.")
                     decision == str(input())
@@ -41,9 +41,8 @@ if start_game == 1:
                     balance -= wager
                     print("Player busted.  Try again.  Your new balance is $" + str(balance))
 
-
-            if decision == "n":
-                while dealer_hand < 16:
+            
+                if dealer_hand < 16:
                     dealer_hand += random.randint(1,11)
                     print("Dealer has " + str(player_hand))
                 if dealer_hand == 21:
