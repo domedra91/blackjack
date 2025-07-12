@@ -173,6 +173,7 @@ if start_game == 1:
 
     if winner == True:
         print("Thanks for playing!")
+        print("Goodbye")
  
  
 
