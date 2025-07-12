@@ -170,6 +170,9 @@ if start_game == 1:
             gameboard()
             print("----------------------------------------------------------------------------------------------------------------------------")
             check_winner(winner)
+
+    if winner == True:
+        print("Thanks for playing!")
  
  
 
